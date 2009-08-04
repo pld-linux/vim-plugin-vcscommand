@@ -6,10 +6,11 @@ License:	Distributable
 Group:		Applications/Editors/Vim
 URL:		http://www.vim.org/scripts/script.php?script_id=90
 BuildArch:	noarch
-#Source0Download:	http://www.vim.org/scripts/download_script.php?src_id=11049
-Source0:	vcscommand-1.99.31.zip
+# Source0Download:	http://www.vim.org/scripts/download_script.php?src_id=11049
+Source0:	vcscommand-%{version}.zip
 # Source0-md5:	a31418cdb845a6881023330498f1cb06
 BuildRequires:	unzip
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _vimdatadir     %{_datadir}/vim/vimfiles
 
